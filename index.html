@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@700&family=IBM+Plex+Serif:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Оценка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <button id="nav_toggle" aria-label="Меню" class="header__menu-burger">
+          <span class="header__menu-burger-line"></span>
+          <span class="header__menu-burger-line"></span>
+          <span class="header__menu-burger-line"></span>
+        </button>
+
+        <div class="header__container">
+          <div class="header__nav" id="nav">
+            <nav class="nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="header__nav-link" data-goto=".intro" href="#" >Оценка</a>
+                </li>
+                <li class="header__nav-item">
+                  <a data-goto=".slider" href="#" class="header__nav-link">Строительно-техническая экспертиза</a>
+                </li>
+                <li class="header__nav-item">
+                  <a data-goto=".cards" href="#" class="header__nav-link">Направления</a>
+                </li>
+                <li class="header__nav-item">
+                  <a data-goto=".form" href="#" class="header__nav-link">Порядок действий</a>
+                </li>
+                <li class="header__nav-item">
+                  <a data-goto=".accordion" href="#" class="header__nav-link">Преимущества</a>
+                </li>
+                <li class="header__nav-item">
+                  <a data-goto=".accordion" href="#" class="header__nav-link">Онлайн заявка</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__logo">
+						<div class="header__logo-img"></div>
+						<div class="header__logo-img-item">
+							<div class="header__logo-img-1"></div>
+							<div class="header__logo-img-2"></div>
+						</div>
+					</div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+			<section class="intro">
+        <div class="intro__img"></div>
+				<div class="container">
+					<div class="intro__content">
+						<h2 class="intro__title">Оценка</h2>
+            <p class="intro__text">При покупке слона нужно знать его стоимость</p>
+            <div class="intro__btn">
+              <button class="intro__btn-button">Заказать</button>
+            </div>
+					</div>
+				</div>
+			</section>
+		</main>
+    <footer></footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
