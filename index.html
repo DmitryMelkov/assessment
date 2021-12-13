@@ -5,77 +5,446 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@700&family=IBM+Plex+Serif:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- slider swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Оценка</title>
   </head>
   <body>
-    <header class="header">
+    <!-- header -->
+    <header class="header fixed">
       <div class="container">
-        <button id="nav_toggle" aria-label="Меню" class="header__menu-burger">
-          <span class="header__menu-burger-line"></span>
-          <span class="header__menu-burger-line"></span>
-          <span class="header__menu-burger-line"></span>
-        </button>
-
         <div class="header__container">
+          <div class="mobile__nav">
+            <button id="nav_toggle" aria-label="Меню" class="header__menu-burger">
+              <span class="header__menu-burger-line"></span>
+              <span class="header__menu-burger-line"></span>
+              <span class="header__menu-burger-line"></span>
+            </button>
+            <div class="logo"></div>
+          </div>
           <div class="header__nav" id="nav">
             <nav class="nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link" data-goto=".intro" href="#" >Оценка</a>
+                  <a class="header__nav-link" data-goto=".intro" href="#">Оценка</a>
                 </li>
                 <li class="header__nav-item">
-                  <a data-goto=".slider" href="#" class="header__nav-link">Строительно-техническая экспертиза</a>
+                  <a class="header__nav-link" data-goto=".expertise" href="#">Строительно-техническая экспертиза</a>
                 </li>
                 <li class="header__nav-item">
-                  <a data-goto=".cards" href="#" class="header__nav-link">Направления</a>
+                  <a class="header__nav-link" data-goto=".direction" href="#">Направления</a>
                 </li>
                 <li class="header__nav-item">
-                  <a data-goto=".form" href="#" class="header__nav-link">Порядок действий</a>
+                  <a class="header__nav-link" data-goto=".procedure" href="#">Порядок действий</a>
                 </li>
                 <li class="header__nav-item">
-                  <a data-goto=".accordion" href="#" class="header__nav-link">Преимущества</a>
+                  <a class="header__nav-link" data-goto=".advantages" href="#">Преимущества</a>
                 </li>
                 <li class="header__nav-item">
-                  <a data-goto=".accordion" href="#" class="header__nav-link">Онлайн заявка</a>
+                  <a class="header__nav-link" data-goto=".online-application" href="#">Онлайн заявка</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="header__logo">
-						<div class="header__logo-img"></div>
-						<div class="header__logo-img-item">
-							<div class="header__logo-img-1"></div>
-							<div class="header__logo-img-2"></div>
-						</div>
-					</div>
+            <div class="header__logo-img"></div>
+            <div class="header__logo-img-item">
+              <div class="header__logo-img-1"></div>
+              <div class="header__logo-img-2"></div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main class="main">
-			<section class="intro">
+      <!-- section intro -->
+      <section class="intro">
         <div class="intro__img"></div>
-				<div class="container">
-					<div class="intro__content">
-						<h2 class="intro__title">Оценка</h2>
-            <p class="intro__text">При покупке слона нужно знать его стоимость</p>
+        <div class="container">
+          <div class="intro__content">
+            <h1 class="intro__title">Оценка</h1>
+            <h4 class="intro__text">При покупке слона нужно знать его стоимость</h4>
             <div class="intro__btn">
               <button class="intro__btn-button">Заказать</button>
             </div>
-					</div>
-				</div>
-			</section>
-		</main>
+          </div>
+          <div class="intro__slider">
+            <div class="swiper intro__slider-swiper">
+              <div class="swiper-wrapper intro__slider-wrapper">
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">квартиры и комнаты</span>
+                    <div class="intro__slider-content-img-1"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">дома, коттеджи и дачи </span>
+                    <div class="intro__slider-content-img-2"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">коммерческая недвижимость</span>
+                    <div class="intro__slider-content-img-3"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">машиноместо гараж</span>
+                    <div class="intro__slider-content-img-4"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">квартиры и комнаты</span>
+                    <div class="intro__slider-content-img-1"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">дома, коттеджи и дачи </span>
+                    <div class="intro__slider-content-img-2"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">коммерческая недвижимость</span>
+                    <div class="intro__slider-content-img-3"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide intro__slider-slide">
+                  <div class="intro__slider-content">
+                    <span class="intro__slider-content-span">машиноместо гараж</span>
+                    <div class="intro__slider-content-img-4"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination intro__slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section expertise -->
+      <section class="expertise">
+        <div class="container">
+          <div class="expertise__container">
+            <div class="expertise__content">
+              <div class="expertise__rectangle expertise__rectangle-1"></div>
+              <div class="expertise__rectangle expertise__rectangle-2"></div>
+              <div class="expertise__rectangle expertise__rectangle-3"></div>
+              <h3 class="expertise__content-title">Наиболее полезное примемение оценки:</h3>
+              <p class="expertise__content-text">
+                Независимая оценка позволяет определить, насколько завышенная или заниженная цена на объект
+                недвижимости, установленная на объект.
+              </p>
+              <p class="expertise__content-text">
+                Независимая оценка позволяет определить, насколько завышенная или заниженная цена на объект
+                недвижимости, установленная на объект.
+              </p>
+              <div class="expertise__content-description" id="expertiseDescription">
+                <p class="expertise__content-text">Оценка стоимости необходима для различных целей, включая:</p>
+                <ul class="expertise__list">
+                  <li class="expertise__list-item">переоценка активов;</li>
+                  <li class="expertise__list-item">оптимизация налогообложения;</li>
+                  <li class="expertise__list-item">имущественные и судебные споры;</li>
+                </ul>
+              </div>
+              <div class="expertise__button">
+                <button class="expertise__button-btn" type="button" id="expertiseBtn"></button>
+              </div>
+            </div>
+            <div class="expertise__img">
+              <div class="expertise__img-picture"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- direction -->
+      <section class="direction">
+        <div class="container">
+          <div class="direction__container">
+            <div class="direction__header">
+              <h2 class="direction__title">Направление</h2>
+              <a class="direction__button">
+                <span class="direction__button-text"
+                  >Все <br />
+                  направления</span
+                >
+                <div class="direction__button-img"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="narrow-container">
+          <div class="direction__content-one">
+            <div class="direction__img">
+              <h3 class="direction__img-title">Оценка недвижимости:</h3>
+              <div class="direction__img-picture">
+                <div class="direction__img-picture-bg"></div>
+                <div class="direction__img-arrow"></div>
+                <img class="direction__img-picture-img" src="./img/direction/img-1.png" alt="" />
+              </div>
+            </div>
+            <div class="direction__rightpart">
+              <div class="direction__rightpart-objects">
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Квартиры и комнаты </span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Дома, коттеджи и дачи </span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Земельные участки </span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Коммерческая недвижимость</span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Машино место, гараж </span>
+                  <div class="direction__button-img"></div>
+                </a>
+              </div>
+              <p class="direction__rightpart-text">
+                Независимая оценка позволяет определить, насколько завышенная или заниженная цена на объект
+                недвижимости, установленная на объект.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="narrow-container">
+          <div class="direction__content-two">
+            <div class="direction__img direction__img-two">
+              <h3 class="direction__img-title">Оценка недвижимости:</h3>
+              <div class="direction__img-picture">
+                <div class="direction__img-picture-bg"></div>
+                <div class="direction__img-arrow"></div>
+                <img class="direction__img-picture-img" src="./img/direction/img-1.png" alt="" />
+              </div>
+            </div>
+            <div class="direction__rightpart direction__rightpart-two">
+              <div class="direction__rightpart-objects direction__rightpart-objects-two">
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Квартиры и комнаты </span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Дома, коттеджи и дачи </span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Земельные участки </span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Коммерческая недвижимость</span>
+                  <div class="direction__button-img"></div>
+                </a>
+                <a class="direction__button direction__rightpart-btn">
+                  <span class="direction__button-text direction__rightpart-item">Машино место, гараж </span>
+                  <div class="direction__button-img"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="direction__content-three">
+            <div class="direction__img direction__img-three">
+              <h4 class="direction__img-title direction__img-title-three">Оценка недвижимости:</h4>
+              <div class="direction__img-picture direction__img-picture-three">
+                <div class="direction__img-picture-bg-three"></div>
+                <div class="direction__img-arrow direction__img-arrow-three"></div>
+                <img
+                  class="direction__img-picture-img direction__img-picture-img-three"
+                  src="./img/direction/img-1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="direction__img direction__img-three">
+              <h4 class="direction__img-title direction__img-title-three">Оценка ущерба:</h4>
+              <div class="direction__img-picture direction__img-picture-three">
+                <div class="direction__img-picture-bg-three"></div>
+                <div class="direction__img-arrow direction__img-arrow-three"></div>
+                <img
+                  class="direction__img-picture-img direction__img-picture-img-three"
+                  src="./img/direction/img-1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="direction__img-three direction__img-three-block"></div>
+            <div class="direction__img-three direction__img-three-block"></div>
+            <div class="direction__img direction__img-three">
+              <h4 class="direction__img-title direction__img-title-three">Оценка недвижимости:</h4>
+              <div class="direction__img-picture direction__img-picture-three">
+                <div class="direction__img-picture-bg-three"></div>
+                <div class="direction__img-arrow direction__img-arrow-three"></div>
+                <img
+                  class="direction__img-picture-img direction__img-picture-img-three"
+                  src="./img/direction/img-1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="direction__img direction__img-three">
+              <h4 class="direction__img-title direction__img-title-three">Оценка ущерба:</h4>
+              <div class="direction__img-picture direction__img-picture-three">
+                <div class="direction__img-picture-bg-three"></div>
+                <div class="direction__img-arrow direction__img-arrow-three"></div>
+                <img
+                  class="direction__img-picture-img direction__img-picture-img-three"
+                  src="./img/direction/img-1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="direction__img direction__img-three">
+              <h4 class="direction__img-title direction__img-title-three">Нематериальные активы:</h4>
+              <div class="direction__img-picture direction__img-picture-three">
+                <div class="direction__img-picture-bg-three"></div>
+                <div class="direction__img-arrow direction__img-arrow-three"></div>
+                <img
+                  class="direction__img-picture-img direction__img-picture-img-three"
+                  src="./img/direction/img-1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="direction__img direction__img-three">
+              <h4 class="direction__img-title direction__img-title-three">Все направления:</h4>
+              <div class="direction__img-picture direction__img-picture-three">
+                <div class="direction__img-picture-bg-three"></div>
+                <div class="direction__img-arrow direction__img-arrow-three"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- procedure -->
+      <section class="procedure">
+        <div class="container">
+          <div class="procedure__container">
+            <h2 class="procedure__title">Порядок действий</h2>
+            <div class="procedure__object">
+              <div class="procedure__left">
+                <div class="procedure__left-img"></div>
+                <div class="procedure__left-span">Объект</div>
+              </div>
+              <div class="procedure-right">
+                <div class="procedure__right-img"></div>
+                <div class="procedure__right-span">Заполнить данные по объекту</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- advantages -->
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages__title">Преимущества</h2>
+          <div class="advantages__container">
+            <div class="advantages__item">
+              <div class="advantages__item-img-1"></div>
+              <h3 class="advantages__item-title">Заботливая поддержка</h3>
+              <p class="advantages__item-text">
+                Точно ответит на все сложные вопросы о стоимости Ваших объектов онлайн и оффлайн
+              </p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img-2"></div>
+              <h3 class="advantages__item-title">Удобный сервис</h3>
+              <p class="advantages__item-text">
+                Электронное взаимодействие — онлайн заказ, отслеживание статуса, получение результата
+              </p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img-3"></div>
+              <h3 class="advantages__item-title">Ценовая политика</h3>
+              <p class="advantages__item-text">
+                Позволяет сотрудничать с лучшими специалистами; экономия времени; а правильное решение могут привести к
+                умножению вашего капитала
+              </p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img-4"></div>
+              <h3 class="advantages__item-title">Нам важен Ваш успех</h3>
+              <p class="advantages__item-text">
+                Наша работа дает знания реальной стоимости активов, показывает факторы влияющие на повышение и снижение
+                стоимости
+              </p>
+            </div>
+            <div class="advantages__item-down"></div>
+            <div class="advantages__item">
+              <div class="advantages__item-img-5"></div>
+              <h3 class="advantages__item-title">Большой опыт работы</h3>
+              <p class="advantages__item-text">Найдем наилучшее решение</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- online-application -->
+      <section class="online-application">
+        <div class="container">
+          <div class="online-application__container">
+            <div class="online-aplication__img-1"></div>
+            <div class="online-aplication__img-2"></div>
+            <div class="online-aplication__img-3"></div>
+            <div class="online-aplication__img-4"></div>
+            <h2 class="online-application__title">
+              Онлайн <br />
+              Заявка
+            </h2>
+            <ul class="online-application__list">
+              <h3 class="online-application__list-title">Выберите тип объекта:</h3>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Недвижимость </a>
+              </li>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Земельный участок </a>
+              </li>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Оборудование </a>
+              </li>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Бизнес </a>
+              </li>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Транспортное средство </a>
+              </li>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Ущерб </a>
+              </li>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Права аренды </a>
+              </li>
+              <li class="online-application__item">
+                <a href="#" class="online-application__link">Нематериальные активовы </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- reviews -->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__container"></div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+
+    <!-- slider swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
 
     <script src="./js/script.js"></script>
   </body>
