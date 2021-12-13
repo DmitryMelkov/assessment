@@ -1502,10 +1502,6 @@ label {
 
   /*direction
   ====================*/
-  .direction__header {
-    margin-left: 20px;
-  }
-
   .direction__img-title {
     font-size: 26px;
   }
@@ -1530,5 +1526,47 @@ label {
 
   .direction__img-three.direction__img {
     width: 100%;
+  }
+  /*procedure
+  =================*/
+  .procedure__right-img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 410px) {
+  .narrow-container {
+    width: 100%;
+    max-width: 350px;
+    margin-left: calc((100% - 350px) / 2);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 350px;
+    margin-left: calc((100% - 350px) / 2);
+  }
+
+  /*header
+  ============*/
+  .header__nav {
+    margin-left: calc((100% - 350px) / 2);
+  }
+
+  /*intro
+  ================*/
+  .intro__content {
+    right: 0;
+  }
+
+  /*direction
+  ===================*/
+  .direction__img-title {
+    padding-left: 10px;
+  }
+  
+  .direction__img-picture-bg {
+    height: 365px;
+    width: 326px;
   }
 }
